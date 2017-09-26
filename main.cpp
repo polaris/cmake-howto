@@ -1,7 +1,9 @@
+#include "config.h"
 #include <iostream>
 
-using namespace std;
-
 int main() {
-    cout << "Hello, world!\n";
+    const auto foo = [](){
+        std::cout << Hello << ", " << World << "!\n";
+    };
+    foo();
 }
